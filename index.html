@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherPro 🌐</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <h1>WeatherPro 🌐</h1>
+        <input type="text" id="cityInput" placeholder="Type city name..." />
+        <button id="searchBtn">Get Weather</button>
+        <p class="hint">e.g., Delhi, Tokyo, New York</p>
+      </div>
+      <div class="main">
+        <div class="icon-section">
+          <img id="weatherIcon" src="cloud.png" alt="icon" />
+        </div>
+        <div class="details">
+          <h2 id="cityName">Delhi</h2>
+          <p id="temperature" class="temp">28°C</p>
+
+          <div class="info-grid">
+            <div class="info-box">
+              <span class="label">Humidity</span>
+              <p id="humidity">77%</p>
+            </div>
+            <div class="info-box">
+              <span class="label">Wind Speed</span>
+              <p id="wind">3.44 km/h</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

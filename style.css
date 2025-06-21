@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  max-width: 1000px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+.sidebar {
+  flex: 1;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(20px);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sidebar h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.sidebar input {
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 16px;
+  outline: none;
+}
+
+.sidebar input::placeholder {
+  color: #ccc;
+}
+
+.sidebar button {
+  padding: 14px;
+  background: #6a11cb;
+  background: linear-gradient(to right, #2575fc, #6a11cb);
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.sidebar .hint {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #aaa;
+}
+
+.main {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(15px);
+  padding: 40px;
+}
+
+.icon-section img {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.details {
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.details h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.details .temp {
+  font-size: 38px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffeb3b;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.info-box {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 25px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+}
+
+.info-box:hover {
+  transform: scale(1.05);
+}
+
+.info-box span {
+  display: block;
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 5px;
+}
+
+.info-box p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
